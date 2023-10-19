@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Home.css';
 
-function Home() {
+function Detail(props) {
+    const imageId = props.match.params.id;
+
     const images = [
         { id: 1, src: 'https://img.remediosdigitales.com/1ac517/mercedes-benz-amg_project_one_concept-2017-1024-02/1366_2000.jpg'},
         { id: 2, src: 'https://img.remediosdigitales.com/1ac517/mercedes-benz-amg_project_one_concept-2017-1024-02/1366_2000.jpg'},
@@ -16,41 +17,21 @@ function Home() {
         // Agrega más imágenes aquí
     ];
 
+    const image = images.find(img => img.id === parseInt(imageId, 10));
+
+    if (!image) {
+        return <div>Imagen no encontrada</div>;
+    }
 
     return (
         <div>
-            <div className="navbar">
-                <div className="navbar-left">
-                    <p>Portfolio</p>
-                </div>
-                <div className="navbar-right">
-                    <a href="#">Home</a>
-                    <a href="#">Proyectos</a>
-                </div>
-            </div>
-            <div className="portfolio-content">
-                <img src="https://static.vecteezy.com/system/resources/previews/002/275/818/original/female-avatar-woman-profile-icon-for-network-vector.jpg" alt="Avatar" />
-                <h2>PORTFOLIO</h2>
-                <div className="divider">
-                    <hr className="line" />
-                    <span className="star">★</span>
-                    <hr className="line" />
-                </div>
-                <p className="small-text">Octavio Arfa - Luka Moscovich</p>
-            </div>
-
-            <div className="mosaic">
-                {images.map(image => (
-                    <Link key={image.id} to={`/projects/${image.id}`}>
-                        <div className="mosaic-item">
-                            <img src={image.src} alt={image.title} />
-                            <p>{image.title}</p>
-                        </div>
-                    </Link>
-                ))}
-            </div>
+            <h2>Detalles de la Imagen</h2>
+            <img src={image.src} alt={image.title} />
+            <p>{image.title}</p>
+            <p>{image.description}</p>
+            <Link to="/">Volver a la página de inicio</Link>
         </div>
     );
 }
 
-export default Home;
+export default Detail;
