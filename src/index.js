@@ -18,22 +18,28 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Home></Home>
+        element: <Home />,
+        loader: async () => {
+          return await fetch(`${process.env.PUBLIC_URL}/projects.json`)
+        }
       },
       {
         path: "projects",
         element: <Projects />,
         loader: async () => {
-          return await fetch("projects.json")
+          return await fetch(`${process.env.PUBLIC_URL}/projects.json`)
         }
       },
       {
         path: "projects/:id",
-        element: <Detail />
+        element: <Detail />,
+        loader: async () => {
+          return await fetch(`${process.env.PUBLIC_URL}/projects.json`)
+        }
       },
       {
         path: "info",
-        element: <Info></Info>
+        element: <Info />
       }
     ]
   }
