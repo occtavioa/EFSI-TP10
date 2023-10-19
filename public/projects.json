@@ -1,53 +1,58 @@
-{
-    "projects": [
-        {
-            "name": "p1",
-            "description": "description",
-            "images": [],
-            "date": "2023-01-01",
-            "url": "localhost:3000"
-        },
-        {
-            "name": "p2",
-            "description": "description",
-            "images": [],
-            "date": "2023-01-01",
-            "url": "localhost:3000"
-        },
-        {
-            "name": "p3",
-            "description": "description",
-            "images": [],
-            "date": "2023-01-01",
-            "url": "localhost:3000"
-        },
-        {
-            "name": "p4",
-            "description": "description",
-            "images": [],
-            "date": "2023-01-01",
-            "url": "localhost:3000"
-        },
-        {
-            "name": "p5",
-            "description": "description",
-            "images": [],
-            "date": "2023-01-01",
-            "url": "localhost:3000"
-        },
-        {
-            "name": "p6",
-            "description": "description",
-            "images": [],
-            "date": "2023-01-01",
-            "url": "localhost:3000"
-        },
-        {
-            "name": "p7",
-            "description": "description",
-            "images": [],
-            "date": "2023-01-01",
-            "url": "localhost:3000"
-        }
-    ]
-}
+[
+    {
+        "name": "p1",
+        "description": "description",
+        "thumbnail": "",
+        "images": [],
+        "date": "2023-01-01",
+        "url": "localhost:3000"
+    },
+    {
+        "name": "p2",
+        "description": "description",
+        "thumbnail": "",
+        "images": [],
+        "date": "2023-01-01",
+        "url": "localhost:3000"
+    },
+    {
+        "name": "p3",
+        "description": "description",
+        "thumbnail": "",
+        "images": [],
+        "date": "2023-01-01",
+        "url": "localhost:3000"
+    },
+    {
+        "name": "p4",
+        "description": "description",
+        "thumbnail": "",
+        "images": [],
+        "date": "2023-01-01",
+        "url": "localhost:3000"
+    },
+    {
+        "name": "p5",
+        "description": "description",
+        "thumbnail": "",
+        "images": [],
+        "date": "2023-01-01",
+        "url": "localhost:3000"
+    },
+    {
+        "name": "p6",
+        "description": "description",
+        "thumbnail": "",
+        "images": [],
+        "date": "2023-01-01",
+        "url": "localhost:3000"
+    },
+    {
+        "name": "p7",
+        "description": "description",
+        "thumbnail": "",
+        "images": [],
+        "date": "2023-01-01",
+        "url": "localhost:3000"
+    }
+]

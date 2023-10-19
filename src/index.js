@@ -5,21 +5,37 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './routes/Home/Home';
-import Creations from './routes/Creations';
+import Projects from './routes/Projects';
 import Info from './routes/Info';
+import Layout from './routes/Layout';
+import Detail from './routes/Detail';
+
 
 const router = createBrowserRouter([
   {
-    index: true,
-    element: <Home></Home>
-  },
-  {
-    path: "creations",
-    element: <Creations></Creations>
-  },
-  {
-    path: "info",
-    element: <Info></Info>
+    path: "/",
+    element: <Layout />,
+    children: [
+      {
+        index: true,
+        element: <Home></Home>
+      },
+      {
+        path: "projects",
+        element: <Projects />,
+        loader: async () => {
+          return await fetch("projects.json")
+        }
+      },
+      {
+        path: "projects/:id",
+        element: <Detail />
+      },
+      {
+        path: "info",
+        element: <Info></Info>
+      }
+    ]
   }
 ])
 
