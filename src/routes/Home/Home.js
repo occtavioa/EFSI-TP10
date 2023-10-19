@@ -4,30 +4,20 @@ import './Home.css';
 
 function Home() {
     const images = [
-        { id: 1, src: 'https://img.remediosdigitales.com/1ac517/mercedes-benz-amg_project_one_concept-2017-1024-02/1366_2000.jpg'},
-        { id: 2, src: 'https://img.remediosdigitales.com/1ac517/mercedes-benz-amg_project_one_concept-2017-1024-02/1366_2000.jpg'},
-        { id: 3, src: 'https://img.remediosdigitales.com/1ac517/mercedes-benz-amg_project_one_concept-2017-1024-02/1366_2000.jpg'},
-        { id: 4, src: 'https://img.remediosdigitales.com/1ac517/mercedes-benz-amg_project_one_concept-2017-1024-02/1366_2000.jpg'},
-        { id: 5, src: 'https://img.remediosdigitales.com/1ac517/mercedes-benz-amg_project_one_concept-2017-1024-02/1366_2000.jpg'},
-        { id: 6, src: 'https://img.remediosdigitales.com/1ac517/mercedes-benz-amg_project_one_concept-2017-1024-02/1366_2000.jpg'},
-        { id: 7, src: 'https://img.remediosdigitales.com/1ac517/mercedes-benz-amg_project_one_concept-2017-1024-02/1366_2000.jpg'},
-        { id: 8, src: 'https://img.remediosdigitales.com/1ac517/mercedes-benz-amg_project_one_concept-2017-1024-02/1366_2000.jpg'},
-        { id: 9, src: 'https://img.remediosdigitales.com/1ac517/mercedes-benz-amg_project_one_concept-2017-1024-02/1366_2000.jpg'},
-        // Agrega más imágenes aquí
+        { id: 1, src: '/mosaico/PROYECTO 1.png'},
+        { id: 2, src: '/mosaico/PROYECTO 2.png'},
+        { id: 3, src: '/mosaico/PROYECTO 3.png'},
+        { id: 4, src: '/mosaico/PROYECTO 4.png'},
+        { id: 5, src: '/mosaico/PROYECTO 5.png'},
+        { id: 6, src: '/mosaico/PROYECTO 6.png'},
+        { id: 7, src: '/mosaico/PROYECTO 7.png'},
+        { id: 8, src: '/mosaico/PROYECTO 8.png'},
+        { id: 9, src: '/mosaico/PROYECTO 9.png'},
     ];
 
 
     return (
         <div>
-            <div className="navbar">
-                <div className="navbar-left">
-                    <p>Portfolio</p>
-                </div>
-                <div className="navbar-right">
-                    <a href="#">Home</a>
-                    <a href="#">Proyectos</a>
-                </div>
-            </div>
             <div className="portfolio-content">
                 <img src="https://static.vecteezy.com/system/resources/previews/002/275/818/original/female-avatar-woman-profile-icon-for-network-vector.jpg" alt="Avatar" />
                 <h2>PORTFOLIO</h2>
