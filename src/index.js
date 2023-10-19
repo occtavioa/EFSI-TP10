@@ -20,21 +20,23 @@ const router = createBrowserRouter([
         index: true,
         element: <Home />,
         loader: async () => {
-          return await fetch(`${process.env.PUBLIC_URL}/projects.json`)
+          return await fetch(`${process.env.PUBLIC_URL}/projects.json`).then(res => res.json())
         }
       },
       {
         path: "projects",
         element: <Projects />,
         loader: async () => {
-          return await fetch(`${process.env.PUBLIC_URL}/projects.json`)
+          return await fetch(`${process.env.PUBLIC_URL}/projects.json`).then(res => res.json())
         }
       },
       {
         path: "projects/:id",
         element: <Detail />,
-        loader: async () => {
-          return await fetch(`${process.env.PUBLIC_URL}/projects.json`)
+        loader: async ({params}) => {
+          const {id} = params
+          const projects = await fetch(`${process.env.PUBLIC_URL}/projects.json`).then(res => res.json())
+          return projects.find((p) => p.id === parseInt(id))
         }
       },
       {

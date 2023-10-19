@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link, useLoaderData, useParams } from 'react-router-dom';
 
-function Detail({}) {
+function Detail() {
     const {id} = useParams()
-    const project = useLoaderData().find((p) => p.id === parseInt(id))
+    const project = useLoaderData()
 
     return (
         <div>
@@ -12,6 +12,11 @@ function Detail({}) {
             <p>{project.name}</p>
             <p>{project.description}</p>
             <Link to="/">Volver a la página de inicio</Link>
+            {
+                project.images.map((img, i) => 
+                    <img key={i} src={img} alt={img}></img>
+                )
+            }
         </div>
     );
 }
