@@ -1,0 +1,19 @@
+.project-card {
+    background-color: antiquewhite;
+    align-items: center;
+}
+
+.project-card-title {
+    text-align: center;
+}
+
+.project-card-description {
+    text-align: center;
+}
+
+.project-card-link {
+    text-align: center;
+    padding: 2%;
+    border: 1px solid black;
+    border-radius: 30px;
+}

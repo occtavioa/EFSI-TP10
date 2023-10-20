@@ -1,3 +1,6 @@
 .content {
     background-color: #82d8ab;
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
 }

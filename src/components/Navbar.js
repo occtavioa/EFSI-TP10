@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 function Navbar() {
     return (
         <div className="navbar">
@@ -5,8 +7,8 @@ function Navbar() {
             <p>Portfolio</p>
         </div>
         <div className="navbar-right">
-            <a href="/">Home</a>
-            <a href="/projects">Proyectos</a>
+            <Link to={"/"} preventScrollReset={false}>Home</Link>
+            <Link to={"/projects"} preventScrollReset={false}>Proyectos</Link>
         </div>
     </div>
     )
