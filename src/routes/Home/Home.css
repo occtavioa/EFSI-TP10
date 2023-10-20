@@ -5,41 +5,6 @@ body {
     padding: 0;
 }
 
-/* Estilos de la barra de navegación (sin cambios) */
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    color: white;
-    padding: 20px 10px;
-    font-family: 'Gabarito', sans-serif;
-}
-
-.navbar-left {
-    flex: 1;
-    text-align: left;
-    height: 100%;
-}
-
-.navbar-right {
-    flex: 1;
-    text-align: right;
-    height: 100%;
-}
-
-.navbar-left p {
-    font-size: 20px;
-}
-
-.navbar-right a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-}
-
 .portfolio-content {
     text-align: center;
     padding: 50px 0;
