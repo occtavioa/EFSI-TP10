@@ -39,7 +39,6 @@ body {
     gap: 50px; /* Espacio entre columnas (ajustado a 10px) */
     margin: 0; /* Sin margen superior */
     padding-top: 20px; /* Agregamos un espacio de 20px en la parte superior */
-    background-color: white; /* Fondo blanco para el mosaico */
 }
 
 .mosaic-item {

@@ -2,9 +2,10 @@ import React from 'react';
 import { Link, useLoaderData, useParams } from 'react-router-dom';
 
 function Detail() {
-    const {id} = useParams()
     const project = useLoaderData()
 
+    console.log(project);
+    
     return (
         <div>
             <h2>Detalles del proyecto</h2>

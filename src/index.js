@@ -9,11 +9,10 @@ import Projects from './routes/Projects';
 import Info from './routes/Info';
 import Layout from './routes/Layout';
 import Detail from './routes/Detail';
-
+import Favorites from './routes/Favorites';
 
 const router = createBrowserRouter([
   {
-    path: "/",
     element: <Layout />,
     children: [
       {
@@ -44,8 +43,8 @@ const router = createBrowserRouter([
         element: <Info />
       },
       {
-        path: "favoritos",
-        element: <favoritos/>
+        path: "favorites",
+        element: <Favorites/>
       }
     ]
   }

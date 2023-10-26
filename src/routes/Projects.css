@@ -2,5 +2,6 @@
     background-color: #82d8ab;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     padding-top: 20px;
 }

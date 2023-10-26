@@ -1,5 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 import ProjectCard from "../components/ProjectCard";
+import ProjectCardList from "../components/ProjectCardList";
 import "./Projects.css"
 
 function Projects() {
@@ -7,11 +8,7 @@ function Projects() {
 
     return (
         <div className="content">
-            {
-                projects.map((project, i) => 
-                    <ProjectCard key={i} project={project} />
-                )
-            }
+            <ProjectCardList projects={projects} />
         </div>
     )
 }
