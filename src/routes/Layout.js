@@ -7,22 +7,23 @@ import { FavoritesContext } from "../FavoritesContext";
 function Layout() {
     const [favorites, setFavorites] = useState(localStorage.getItem("favorites") === null ? [] : JSON.parse(localStorage.getItem("favorites")))
 
-    function addFavorite(project) {
-        if(favorites.includes(project)) {
+    function addFavorite(pProject) {
+        if(!favorites.find(favorite => favorite.id === pProject.id) === undefined) {
             return
         }
-        setFavorites(favorites.toSpliced(0, 0, project))
+        setFavorites(favorites.toSpliced(0, 0, pProject))
     }
 
-    function removeFavorite(project) {
-        if(!favorites.includes(project)) {
+    function removeFavorite(pProject) {
+        let project = favorites.find(favorite => favorite.id === pProject.id)
+        if(project === undefined) {
             return
         }
         setFavorites(favorites.toSpliced(favorites.indexOf(project), 1))
     }
 
     useEffect(() => {
-        // console.log(favorites);
+        console.log(favorites);
         localStorage.setItem("favorites", JSON.stringify(favorites))
     }, [favorites])
 
