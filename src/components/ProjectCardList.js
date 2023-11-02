@@ -8,8 +8,8 @@ function ProjectCardList({projects}) {
     return (
         <div style={{display: "flex", flexWrap: "wrap"}}>
             {
-                projects.map((project, i) =>
-                    <ProjectCard key={i} project={project} isFavorite={favorites.includes(project)} />
+                projects.map((project) =>
+                    <ProjectCard key={project.id} project={project} isFavorite={favorites.some(favorite => favorite.id === project.id)} />
                 )
             }
         </div>

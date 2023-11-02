@@ -20,10 +20,3 @@
 .project-card-thumbnail {
     width: 100%;
 }
-
-.project-card-link {
-    margin: auto;
-    border: 1px solid black;
-    border-radius: 30px;
-    color: #333;
-}

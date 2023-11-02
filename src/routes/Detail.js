@@ -4,10 +4,8 @@ import { Link, useLoaderData, useParams } from 'react-router-dom';
 function Detail() {
     const project = useLoaderData()
 
-    console.log(project);
-    
     return (
-        <div>
+        <div >
             <h2>Detalles del proyecto</h2>
             <img src={project.thumbnail} alt={project.name} />
             <p>{project.name}</p>

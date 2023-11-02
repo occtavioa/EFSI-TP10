@@ -14,11 +14,11 @@ function ProjectCard({project, isFavorite}) {
                 {project.description}
             </p>
             <div style={{display: "flex"}}>
-                <button className="project-card-link">
+                <button className="">
                     <Link to={`${project.id}`}>Ver proyecto</Link>
                 </button>
-                <button onClick={() => {isFavorite ? removeFavorite(project) : addFavorite(project)}} className="project-card-link">
-                    {isFavorite ? <>Quitar</> : <>Agregar</>}
+                <button onClick={() => {isFavorite ? removeFavorite(project) : addFavorite(project)}}>
+                    {isFavorite ? <span style={{color: "black"}}>Quitar</span> : <span style={{color: "black"}}>Agregar</span>}
                 </button>
             </div>
         </div>
