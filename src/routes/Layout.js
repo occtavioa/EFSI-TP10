@@ -16,11 +16,9 @@ function Layout() {
 
     function removeFavorite(pProject) {
         let project = favorites.find(favorite => favorite.id === pProject.id)
-        console.log("REMOVE", project);
         if(typeof project === "undefined") {
             return
         }
-        console.log("COSO", favorites.toSpliced(favorites.indexOf(project), 1));
         setFavorites(favorites.toSpliced(favorites.indexOf(project), 1))
     }
 
