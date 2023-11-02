@@ -17,7 +17,7 @@ function ProjectCard({project, isFavorite}) {
             </p>
             <div style={{display: "flex"}}>
                 <button className="">
-                    <Link to={`${project.id}`}>Ver proyecto</Link>
+                    <Link to={`/projects/${project.id}`}>Ver proyecto</Link>
                 </button>
                 <button onClick={() => {isFavorite ? removeFavorite(project) : addFavorite(project)}}>
                     {isFavorite ? <span style={{color: "black"}}><FavoriteIcon /> Quitar</span> : <span style={{color: "black"}}><FavoriteBorderIcon /> Agregar</span>}
