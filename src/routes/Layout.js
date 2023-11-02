@@ -8,7 +8,7 @@ function Layout() {
     const [favorites, setFavorites] = useState(localStorage.getItem("favorites") === null ? [] : JSON.parse(localStorage.getItem("favorites")))
 
     function addFavorite(pProject) {
-        if(!favorites.find(favorite => favorite.id === pProject.id) === undefined) {
+        if(typeof favorites.find(favorite => favorite.id === pProject.id) !== "undefined") {
             return
         }
         setFavorites(favorites.toSpliced(0, 0, pProject))
@@ -16,14 +16,15 @@ function Layout() {
 
     function removeFavorite(pProject) {
         let project = favorites.find(favorite => favorite.id === pProject.id)
-        if(project === undefined) {
+        console.log("REMOVE", project);
+        if(typeof project === "undefined") {
             return
         }
+        console.log("COSO", favorites.toSpliced(favorites.indexOf(project), 1));
         setFavorites(favorites.toSpliced(favorites.indexOf(project), 1))
     }
 
     useEffect(() => {
-        console.log(favorites);
         localStorage.setItem("favorites", JSON.stringify(favorites))
     }, [favorites])
 

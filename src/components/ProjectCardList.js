@@ -8,7 +8,7 @@ function ProjectCardList({projects}) {
     return (
         <div style={{display: "flex", flexWrap: "wrap"}}>
             {
-                projects.map((project) =>
+                projects.map(project =>
                     <ProjectCard key={project.id} project={project} isFavorite={favorites.some(favorite => favorite.id === project.id)} />
                 )
             }
