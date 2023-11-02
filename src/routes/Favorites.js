@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Link, useOutletContext } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import ProjectCardList from '../components/ProjectCardList';
 import { FavoritesContext } from '../FavoritesContext';
 import './info.css';

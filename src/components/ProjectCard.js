@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react"
+import { useContext } from "react"
 import { Link } from "react-router-dom"
 import { FavoritesContext } from "../FavoritesContext"
 import "./ProjectCard.css"

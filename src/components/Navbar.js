@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext } from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom'; // Importa Link de react-router-dom
 import { FavoritesContext } from '../FavoritesContext';

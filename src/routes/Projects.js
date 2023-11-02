@@ -1,5 +1,4 @@
 import { useLoaderData } from "react-router-dom";
-import ProjectCard from "../components/ProjectCard";
 import ProjectCardList from "../components/ProjectCardList";
 import "./Projects.css"
 

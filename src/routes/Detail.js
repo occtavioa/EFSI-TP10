@@ -1,6 +1,5 @@
-import { Button } from '@mui/base';
 import React from 'react';
-import { Link, useLoaderData, useParams } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 import "./Detail.css"
 
 function Detail() {

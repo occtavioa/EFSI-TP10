@@ -1,4 +1,4 @@
-import { useContext, useState } from "react"
+import { useContext } from "react"
 import { FavoritesContext } from "../FavoritesContext"
 import ProjectCard from "./ProjectCard"
 
